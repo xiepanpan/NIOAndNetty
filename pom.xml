@@ -37,6 +37,11 @@
             <artifactId>protobuf-java</artifactId>
             <version>3.6.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.markusmo3.urm</groupId>
+            <artifactId>urm-core</artifactId>
+            <version>1.4.4</version>
+        </dependency>
     </dependencies>
 
 
