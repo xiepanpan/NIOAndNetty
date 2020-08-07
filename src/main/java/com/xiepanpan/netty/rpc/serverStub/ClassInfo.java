@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * @author: xiepanpan
  * @Date: 2020/8/7
- * @Description: 封装类信息
+ * @Description: 用来封装消费方发起远程调用时传给服务方的数据
  */
 public class ClassInfo implements Serializable {
 
@@ -22,7 +22,7 @@ public class ClassInfo implements Serializable {
     /**
      * 参数类型
      */
-    private Class<?> types;
+    private Class<?>[] types;
     /**
      * 参数列表
      */
@@ -48,11 +48,11 @@ public class ClassInfo implements Serializable {
         this.methodName = methodName;
     }
 
-    public Class<?> getTypes() {
+    public Class<?>[] getTypes() {
         return types;
     }
 
-    public void setTypes(Class<?> types) {
+    public void setTypes(Class<?>[] types) {
         this.types = types;
     }
 

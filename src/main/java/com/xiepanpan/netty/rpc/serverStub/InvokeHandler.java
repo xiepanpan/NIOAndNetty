@@ -30,7 +30,7 @@ public class InvokeHandler extends ChannelInboundHandlerAdapter {
      * @return
      */
     private String getImplClassName(ClassInfo classInfo) throws ClassNotFoundException {
-        String interfacePath ="cn.xiepanpan.rpc.server";
+        String interfacePath ="com.xiepanpan.netty.rpc.server";
         int lastDot = classInfo.getClassName().lastIndexOf(".");
         String interfaceName = classInfo.getClassName().substring(lastDot);
         Class<?> superClass = Class.forName(interfacePath + interfaceName);
@@ -39,6 +39,7 @@ public class InvokeHandler extends ChannelInboundHandlerAdapter {
         Set<Class<?>> implClassSet = (Set<Class<?>>) reflections.getSubTypesOf(superClass);
         if (implClassSet.size()==0) {
             System.out.println("未找到实现类");
+            return null;
         }else if (implClassSet.size()>1) {
             System.out.println("找到多个实现类，未明确使用哪一个");
             return null;
