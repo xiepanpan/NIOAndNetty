@@ -1,4 +1,6 @@
-# ThreadDemo
+# NIO与netty编程 
+
+## 线程安全
 com.xiepanpan.thread.safe 线程安全问题 卖火车票 用synchronized解决线程安全问题
 
 com.xiepanpan.thread.communication  线程间通信
@@ -32,4 +34,4 @@ com.xiepanpan.netty.codec 编解码
 com.xiepanpan.netty.rpc 自定义rpc
 
 
-   
+--学自黑马   
