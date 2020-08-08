@@ -1,6 +1,8 @@
 package com.xiepanpan.netty.rpc.client;
 
 import com.xiepanpan.netty.rpc.clientStub.NettyRpcProxy;
+import com.xiepanpan.netty.rpc.server.HelloNetty;
+import com.xiepanpan.netty.rpc.server.HelloRpc;
 
 /**
  * @author: xiepanpan

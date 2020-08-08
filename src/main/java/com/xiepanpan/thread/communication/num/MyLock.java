@@ -1,4 +1,4 @@
-package com.xiepanpan.thread.num;
+package com.xiepanpan.thread.communication.num;
 
 /**
  * @author: xiepanpan
